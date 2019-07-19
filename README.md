@@ -11,7 +11,10 @@ Make sure you have connected your `arduino` board to your computer first
 - Modify it based on your project needs.
 - Run `npm run dev` for development
 
+# Where goes my code?
+...
+
 # Whats next?
-[ ] Add more components
-[ ] Add tests
-[ ] Add support for other boards (raspberry pi?) 
+- [ ] Add more components
+- [ ] Add tests
+- [ ] Add support for other boards (raspberry pi?) 
