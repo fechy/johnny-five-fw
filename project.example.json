@@ -1,0 +1,12 @@
+{
+  "board": "arduino-uno",
+  "components": [
+    {
+      "id": "led-0",
+      "type": "test-led",
+      "options": {
+         "pin": 13
+      }
+    }
+  ]
+}

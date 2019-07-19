@@ -1,0 +1,36 @@
+{
+  "name": "arduino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^12.6.8",
+    "hashmap": "^2.3.0",
+    "humps": "^2.0.1",
+    "johnny-five": "^1.1.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.4",
+    "@types/johnny-five": "0.0.41",
+    "debug": "^4.1.1",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "trash-cli": "^3.0.0"
+  },
+  "scripts": {
+    "build": "run-s clean && run-p build:*",
+    "build:ts": "tsc -p tsconfig.json",
+    "clean": "trash build test",
+    "start": "node build/main/server.js",
+    "dev": "run-p -c -l dev:**",
+    "dev:watch": "tsc -p tsconfig.json --watch",
+    "dev:server": "nodemon --watch build/main/ build/main/server.js"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "author": "fechy",
+  "license": "ISC"
+}
